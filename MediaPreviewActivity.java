@@ -1,4 +1,3 @@
-package com.babbleu.view.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,29 +9,6 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
-import com.babbleu.R;
-import com.babbleu.model.PojoAppAuthentication;
-import com.babbleu.model.PojoConversation;
-import com.babbleu.model.PojoFollower;
-import com.babbleu.model.PojoGallery;
-import com.babbleu.model.PojoLoginData;
-import com.babbleu.model.PojoMessages;
-import com.babbleu.model.PojoSelectedMediaFile;
-import com.babbleu.webservice.Constant;
-import com.babbleu.utils.GlobalFunction;
-import com.babbleu.utils.MessageEvents.MediaPreviewItemDeletedEvent;
-import com.babbleu.utils.MessageEvents.MessageEventSendCustomGIf;
-import com.babbleu.MyApplication.MyApplication;
-import com.babbleu.Realm.RealmChatMessage;
-import com.babbleu.Realm.RealmGetAllConversation;
-import com.babbleu.Realm.RealmDatabaseHandler;
-import com.babbleu.utils.RecyclerItemClickListener;
-import com.babbleu.utils.trimmer.interfaces.passMediaData;
-import com.babbleu.utils.trimmer.utils.BackgroundExecutor;
-import com.babbleu.view.adapter.BottomMediaPreview;
-import com.babbleu.view.adapter.MediaPreview;
-import com.babbleu.view.adapter.MediaPreviewAdapter;
-import com.babbleu.view.fragment.PassCodeFragment;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -45,7 +21,7 @@ import java.util.List;
 
 public class MediaPreviewActivity extends BaseActivity implements View.OnClickListener, passMediaData {
 
-    public static com.babbleu.utils.trimmer.interfaces.passMediaData passMediaData;
+    public static com.utils.trimmer.interfaces.passMediaData passMediaData;
     public static boolean isCanceled = false;
     private MediaPreview mediaPreview;
     private BottomMediaPreview bottomMediaPreview;
