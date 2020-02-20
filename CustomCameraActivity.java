@@ -1,4 +1,3 @@
-package com.babbleu.view.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -33,21 +32,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
-import com.babbleu.R;
-import com.babbleu.databinding.ActivityCustomCameraBinding;
-import com.babbleu.model.PojoAppAuthentication;
-import com.babbleu.model.PojoGallery;
-import com.babbleu.webservice.Constant;
-import com.babbleu.utils.GlobalFunction;
-import com.babbleu.utils.MessageEvents.MediaPreviewItemDeletedEvent;
-import com.babbleu.utils.MessageEvents.MessageEvent;
-import com.babbleu.utils.MessageEvents.MessageEventCaptureImageFile;
-import com.babbleu.utils.MessageEvents.MessageMultipleImages;
-import com.babbleu.MyApplication.MyApplication;
-import com.babbleu.Realm.RealmDatabaseHandler;
-import com.babbleu.utils.RunTimePermission;
-import com.babbleu.view.fragment.MediaPreviewFragment;
-import com.babbleu.view.fragment.PassCodeFragment;
 import com.google.gson.Gson;
 
 import org.greenrobot.eventbus.EventBus;
